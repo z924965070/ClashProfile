@@ -60,7 +60,6 @@ proxies:
   - {name: YD|www.zyw.asia ZYW免费节点 3, server: uk1.barbecuepie.com, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, sni: uk1.barbecuepie.com, skip-cert-verify: true, udp: true}
   - {name: 白嫖频道@fffffx2-OS3-Rate:1.0, server: os3.barbecuepie.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, sni: os3.barbecuepie.com, skip-cert-verify: true, udp: true}
   - {name: 白嫖频道fffffx2-AU3-Rate:1.0, server: au3.barbecuepie.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, sni: au3.barbecuepie.com, skip-cert-verify: true, udp: true}
-  - {name: 尽头の回国CN 北京-腾讯, server: 101.43.160.51, port: 443, type: vmess, uuid: 5e398649-9adf-4051-f7ba-a2443fc0c540, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -122,7 +121,6 @@ proxy-groups:
       - YD|www.zyw.asia ZYW免费节点 3
       - 白嫖频道@fffffx2-OS3-Rate:1.0
       - 白嫖频道fffffx2-AU3-Rate:1.0
-      - 尽头の回国CN 北京-腾讯
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -183,7 +181,6 @@ proxy-groups:
       - YD|www.zyw.asia ZYW免费节点 3
       - 白嫖频道@fffffx2-OS3-Rate:1.0
       - 白嫖频道fffffx2-AU3-Rate:1.0
-      - 尽头の回国CN 北京-腾讯
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -245,7 +242,6 @@ proxy-groups:
       - YD|www.zyw.asia ZYW免费节点 3
       - 白嫖频道@fffffx2-OS3-Rate:1.0
       - 白嫖频道fffffx2-AU3-Rate:1.0
-      - 尽头の回国CN 北京-腾讯
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -319,7 +315,6 @@ proxy-groups:
       - YD|www.zyw.asia ZYW免费节点 3
       - 白嫖频道@fffffx2-OS3-Rate:1.0
       - 白嫖频道fffffx2-AU3-Rate:1.0
-      - 尽头の回国CN 北京-腾讯
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -385,7 +380,6 @@ proxy-groups:
       - YD|www.zyw.asia ZYW免费节点 3
       - 白嫖频道@fffffx2-OS3-Rate:1.0
       - 白嫖频道fffffx2-AU3-Rate:1.0
-      - 尽头の回国CN 北京-腾讯
   - name: 📲 电报信息
     type: select
     proxies:
@@ -446,7 +440,6 @@ proxy-groups:
       - YD|www.zyw.asia ZYW免费节点 3
       - 白嫖频道@fffffx2-OS3-Rate:1.0
       - 白嫖频道fffffx2-AU3-Rate:1.0
-      - 尽头の回国CN 北京-腾讯
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -508,7 +501,6 @@ proxy-groups:
       - YD|www.zyw.asia ZYW免费节点 3
       - 白嫖频道@fffffx2-OS3-Rate:1.0
       - 白嫖频道fffffx2-AU3-Rate:1.0
-      - 尽头の回国CN 北京-腾讯
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -579,7 +571,6 @@ proxy-groups:
       - YD|www.zyw.asia ZYW免费节点 3
       - 白嫖频道@fffffx2-OS3-Rate:1.0
       - 白嫖频道fffffx2-AU3-Rate:1.0
-      - 尽头の回国CN 北京-腾讯
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
