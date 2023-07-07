@@ -5,243 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 54.180.118.178:45691, server: 54.180.118.178, port: 45691, type: ss, cipher: aes-256-gcm, password: dO6vPyx2X8, udp: true}
-  - {name: _37, server: 149.50.92.75, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 8DKJ|@Zyw_Channel, server: 149.50.75.76, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 8DKJ|@Zyw_Channel 2, server: 149.50.77.109, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 8DKJ|@Zyw_Channel 3, server: air-seoul21.900513.xyz, port: 7718, type: trojan, password: 4cfb5b98-5a9d-4c6d-8911-25deca297fa1, sni: air-seoul21.900513.xyz, skip-cert-verify: true, udp: true}
-  - {name: 8DKJ|tg频道:@Zyw_Channel, server: 149.50.77.125, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 8DKJ|tg频道:@Zyw_Channel 2, server: 149.50.83.120, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: 8DKJ|www.zyw.asia ZYW免费节点, server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AZ-美西, server: 20.253.154.200, port: 48410, type: vmess, uuid: 3c530c62-556a-4e3c-92b3-6224a185c3c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /cccccc, ws-headers: {Host: 20.253.154.200}, udp: true}
-  - {name: CN_131, server: zf.heigouyunzf.xyz, port: 38805, type: trojan, password: e958b47d-3510-445a-99cb-dc98d227e29e, sni: zf.heigouyunzf.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_136, server: zf.heigouyunzf.xyz, port: 38803, type: trojan, password: e958b47d-3510-445a-99cb-dc98d227e29e, sni: zf.heigouyunzf.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_140, server: zf.heigouyunzf.xyz, port: 38801, type: trojan, password: e958b47d-3510-445a-99cb-dc98d227e29e, sni: zf.heigouyunzf.xyz, skip-cert-verify: true, udp: true}
-  - {name: HongKong-HK5-Rate:1.0, server: hk5.barbecuepie.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, sni: hk5.barbecuepie.com, skip-cert-verify: true, udp: true}
-  - {name: IL_317, server: 149.50.71.155, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_342, server: 149.50.71.124, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_347, server: 149.50.75.81, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_349, server: de1.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, sni: de1.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: IL_353, server: 149.50.77.95, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_354, server: 149.50.70.107, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_358, server: 149.50.77.97, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_362, server: 149.50.83.42, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_363, server: 149.50.71.164, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_377, server: 149.50.66.127, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_378, server: 149.50.77.102, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_384, server: 149.50.70.83, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_392, server: 149.50.69.99, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_396, server: 149.50.67.151, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_398, server: 149.50.71.120, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_400, server: 149.50.66.110, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_406, server: 149.50.77.131, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_411, server: 149.50.75.104, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_413, server: 149.50.84.32, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_414, server: 149.50.77.144, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_417, server: 149.50.67.154, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_420, server: 149.50.75.214, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: IL_429, server: 149.50.66.124, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_548, server: air-chuncheon24.900513.xyz, port: 7728, type: trojan, password: 4cfb5b98-5a9d-4c6d-8911-25deca297fa1, sni: air-chuncheon24.900513.xyz, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇮🇱IL-🇦🇺AU_60 |10.16Mb, server: 149.50.66.99, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇮🇱IL-🇯🇵JP_76 |18.04Mb, server: 149.50.70.76, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: TK0123.com-5.22泰国01, server: 45.136.239.32, port: 51382, type: vmess, uuid: 9a780f2c-9643-49c0-90a6-7a74a566eb7f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TW_598, server: hinet2.downloadvip.cfd, port: 443, type: trojan, password: d8b00b98-96fb-43d5-af14-4166a329a655, sni: hinet2.downloadvip.cfd, skip-cert-verify: true, udp: true}
-  - {name: US_1233, server: air-toyko13.900513.xyz, port: 7708, type: trojan, password: 4cfb5b98-5a9d-4c6d-8911-25deca297fa1, sni: air-toyko13.900513.xyz, skip-cert-verify: true, udp: true}
+  - {name: _26, server: 13.215.206.69, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: KR_380, server: 3.35.230.64, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: YV|@Zyw_Channel, server: zf.heigouyunzf.xyz, port: 38801, type: trojan, password: bc879024-4a54-4cda-874a-3a39f6bc634d, sni: zf.heigouyunzf.xyz, skip-cert-verify: true, udp: true}
+  - {name: _67, server: 3.38.104.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: AU_41, server: kr2.jb7ueoq73.xyz, port: 10021, type: trojan, password: 49570603-a6a7-4e16-bcb7-7d534b4fbee7, sni: kr2.jb7ueoq73.xyz, skip-cert-verify: true, udp: true}
+  - {name: YV|@Zyw_Channel 2, server: 3.75.250.36, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
+  - {name: US_577, server: 74.121.191.98, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: FR_251, server: 54.36.115.241, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: Relay_-🇺🇸US_319, server: 36.228.224.160, port: 23330, type: trojan, password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7, skip-cert-verify: true, udp: true}
+  - {name: YV|tg频道:@Zyw_Channel, server: 3.10.227.183, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
+  - {name: _71, server: 185.135.86.173, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: YV|www.zyw.asia ZYW免费节点, server: 172.104.163.77, port: 42661, type: ss, cipher: chacha20-ietf-poly1305, password: !<str> 9869583295, udp: true}
+  - {name: IR_311, server: 185.135.86.173, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: IR_312, server: 185.135.86.173, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
   - {name: US_92 |99.56Mb, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
-  - {name: YD|@Zyw_Channel, server: 23.225.211.20, port: 42941, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YD|@Zyw_Channel 2, server: cfvn1.cloudfast.vn, port: 80, type: vmess, uuid: 19537db7-b002-4a60-8f91-59461bf56c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zingfast.vn, ws-headers: {Host: cfvn1.cloudfast.vn}, udp: true}
-  - {name: YD|@Zyw_Channel 3, server: us-08-cz2dg2.ferryhwp8ebm.com, port: 7308, type: trojan, password: 97d557df-6f6a-5bad-9483-600aba02da3a, sni: us-08-cz2dg2.ferryhwp8ebm.com, skip-cert-verify: true, udp: true}
-  - {name: YD|@Zyw_Channel 4, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: nl.sharecentrepro.com}, udp: true}
-  - {name: YD|tg频道:@Zyw_Channel, server: 112.29.94.76, port: 47589, type: vmess, uuid: 83a424d8-4bcb-4cee-b016-2c8f1db4a921, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YD|tg频道:@Zyw_Channel 2, server: uk1.nigirocloud.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, sni: uk1.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: YD|tg频道:@Zyw_Channel 3, server: 139.144.119.75, port: 41998, type: ss, cipher: chacha20-ietf-poly1305, password: !<str> 8210504729, udp: true}
-  - {name: YD|www.zyw.asia ZYW免费节点, server: 192.74.231.186, port: 49255, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YD|www.zyw.asia ZYW免费节点 2, server: air-mumbai13.900513.xyz, port: 7708, type: trojan, password: 4cfb5b98-5a9d-4c6d-8911-25deca297fa1, sni: air-mumbai13.900513.xyz, skip-cert-verify: true, udp: true}
-  - {name: YD|www.zyw.asia ZYW免费节点 3, server: uk1.barbecuepie.com, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, sni: uk1.barbecuepie.com, skip-cert-verify: true, udp: true}
-  - {name: 白嫖频道@fffffx2-OS3-Rate:1.0, server: os3.barbecuepie.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, sni: os3.barbecuepie.com, skip-cert-verify: true, udp: true}
-  - {name: 白嫖频道fffffx2-AU3-Rate:1.0, server: au3.barbecuepie.com, port: 4003, type: trojan, password: PlF471nxneY0YevI, sni: au3.barbecuepie.com, skip-cert-verify: true, udp: true}
+  - {name: _71 2, server: 54.255.237.136, port: 2333, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 54.180.118.178:45691
-      - _37
-      - 8DKJ|@Zyw_Channel
-      - 8DKJ|@Zyw_Channel 2
-      - 8DKJ|@Zyw_Channel 3
-      - 8DKJ|tg频道:@Zyw_Channel
-      - 8DKJ|tg频道:@Zyw_Channel 2
-      - 8DKJ|www.zyw.asia ZYW免费节点
-      - AZ-美西
-      - CN_131
-      - CN_136
-      - CN_140
-      - HongKong-HK5-Rate:1.0
-      - IL_317
-      - IL_342
-      - IL_347
-      - IL_349
-      - IL_353
-      - IL_354
-      - IL_358
-      - IL_362
-      - IL_363
-      - IL_377
-      - IL_378
-      - IL_384
-      - IL_392
-      - IL_396
-      - IL_398
-      - IL_400
-      - IL_406
-      - IL_411
-      - IL_413
-      - IL_414
-      - IL_417
-      - IL_420
-      - IL_429
-      - Relay_🇦🇺AU-🇦🇺AU_548
-      - Relay_🇮🇱IL-🇦🇺AU_60 |10.16Mb
-      - Relay_🇮🇱IL-🇯🇵JP_76 |18.04Mb
-      - TK0123.com-5.22泰国01
-      - TW_598
-      - US_1233
+      - _26
+      - KR_380
+      - YV|@Zyw_Channel
+      - _67
+      - AU_41
+      - YV|@Zyw_Channel 2
+      - US_577
+      - FR_251
+      - Relay_-🇺🇸US_319
+      - YV|tg频道:@Zyw_Channel
+      - _71
+      - YV|www.zyw.asia ZYW免费节点
+      - IR_311
+      - IR_312
       - US_92 |99.56Mb
-      - YD|@Zyw_Channel
-      - YD|@Zyw_Channel 2
-      - YD|@Zyw_Channel 3
-      - YD|@Zyw_Channel 4
-      - YD|tg频道:@Zyw_Channel
-      - YD|tg频道:@Zyw_Channel 2
-      - YD|tg频道:@Zyw_Channel 3
-      - YD|www.zyw.asia ZYW免费节点
-      - YD|www.zyw.asia ZYW免费节点 2
-      - YD|www.zyw.asia ZYW免费节点 3
-      - 白嫖频道@fffffx2-OS3-Rate:1.0
-      - 白嫖频道fffffx2-AU3-Rate:1.0
+      - _71 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 54.180.118.178:45691
-      - _37
-      - 8DKJ|@Zyw_Channel
-      - 8DKJ|@Zyw_Channel 2
-      - 8DKJ|@Zyw_Channel 3
-      - 8DKJ|tg频道:@Zyw_Channel
-      - 8DKJ|tg频道:@Zyw_Channel 2
-      - 8DKJ|www.zyw.asia ZYW免费节点
-      - AZ-美西
-      - CN_131
-      - CN_136
-      - CN_140
-      - HongKong-HK5-Rate:1.0
-      - IL_317
-      - IL_342
-      - IL_347
-      - IL_349
-      - IL_353
-      - IL_354
-      - IL_358
-      - IL_362
-      - IL_363
-      - IL_377
-      - IL_378
-      - IL_384
-      - IL_392
-      - IL_396
-      - IL_398
-      - IL_400
-      - IL_406
-      - IL_411
-      - IL_413
-      - IL_414
-      - IL_417
-      - IL_420
-      - IL_429
-      - Relay_🇦🇺AU-🇦🇺AU_548
-      - Relay_🇮🇱IL-🇦🇺AU_60 |10.16Mb
-      - Relay_🇮🇱IL-🇯🇵JP_76 |18.04Mb
-      - TK0123.com-5.22泰国01
-      - TW_598
-      - US_1233
+      - _26
+      - KR_380
+      - YV|@Zyw_Channel
+      - _67
+      - AU_41
+      - YV|@Zyw_Channel 2
+      - US_577
+      - FR_251
+      - Relay_-🇺🇸US_319
+      - YV|tg频道:@Zyw_Channel
+      - _71
+      - YV|www.zyw.asia ZYW免费节点
+      - IR_311
+      - IR_312
       - US_92 |99.56Mb
-      - YD|@Zyw_Channel
-      - YD|@Zyw_Channel 2
-      - YD|@Zyw_Channel 3
-      - YD|@Zyw_Channel 4
-      - YD|tg频道:@Zyw_Channel
-      - YD|tg频道:@Zyw_Channel 2
-      - YD|tg频道:@Zyw_Channel 3
-      - YD|www.zyw.asia ZYW免费节点
-      - YD|www.zyw.asia ZYW免费节点 2
-      - YD|www.zyw.asia ZYW免费节点 3
-      - 白嫖频道@fffffx2-OS3-Rate:1.0
-      - 白嫖频道fffffx2-AU3-Rate:1.0
+      - _71 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 54.180.118.178:45691
-      - _37
-      - 8DKJ|@Zyw_Channel
-      - 8DKJ|@Zyw_Channel 2
-      - 8DKJ|@Zyw_Channel 3
-      - 8DKJ|tg频道:@Zyw_Channel
-      - 8DKJ|tg频道:@Zyw_Channel 2
-      - 8DKJ|www.zyw.asia ZYW免费节点
-      - AZ-美西
-      - CN_131
-      - CN_136
-      - CN_140
-      - HongKong-HK5-Rate:1.0
-      - IL_317
-      - IL_342
-      - IL_347
-      - IL_349
-      - IL_353
-      - IL_354
-      - IL_358
-      - IL_362
-      - IL_363
-      - IL_377
-      - IL_378
-      - IL_384
-      - IL_392
-      - IL_396
-      - IL_398
-      - IL_400
-      - IL_406
-      - IL_411
-      - IL_413
-      - IL_414
-      - IL_417
-      - IL_420
-      - IL_429
-      - Relay_🇦🇺AU-🇦🇺AU_548
-      - Relay_🇮🇱IL-🇦🇺AU_60 |10.16Mb
-      - Relay_🇮🇱IL-🇯🇵JP_76 |18.04Mb
-      - TK0123.com-5.22泰国01
-      - TW_598
-      - US_1233
+      - _26
+      - KR_380
+      - YV|@Zyw_Channel
+      - _67
+      - AU_41
+      - YV|@Zyw_Channel 2
+      - US_577
+      - FR_251
+      - Relay_-🇺🇸US_319
+      - YV|tg频道:@Zyw_Channel
+      - _71
+      - YV|www.zyw.asia ZYW免费节点
+      - IR_311
+      - IR_312
       - US_92 |99.56Mb
-      - YD|@Zyw_Channel
-      - YD|@Zyw_Channel 2
-      - YD|@Zyw_Channel 3
-      - YD|@Zyw_Channel 4
-      - YD|tg频道:@Zyw_Channel
-      - YD|tg频道:@Zyw_Channel 2
-      - YD|tg频道:@Zyw_Channel 3
-      - YD|www.zyw.asia ZYW免费节点
-      - YD|www.zyw.asia ZYW免费节点 2
-      - YD|www.zyw.asia ZYW免费节点 3
-      - 白嫖频道@fffffx2-OS3-Rate:1.0
-      - 白嫖频道fffffx2-AU3-Rate:1.0
+      - _71 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -260,61 +104,22 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 54.180.118.178:45691
-      - _37
-      - 8DKJ|@Zyw_Channel
-      - 8DKJ|@Zyw_Channel 2
-      - 8DKJ|@Zyw_Channel 3
-      - 8DKJ|tg频道:@Zyw_Channel
-      - 8DKJ|tg频道:@Zyw_Channel 2
-      - 8DKJ|www.zyw.asia ZYW免费节点
-      - AZ-美西
-      - CN_131
-      - CN_136
-      - CN_140
-      - HongKong-HK5-Rate:1.0
-      - IL_317
-      - IL_342
-      - IL_347
-      - IL_349
-      - IL_353
-      - IL_354
-      - IL_358
-      - IL_362
-      - IL_363
-      - IL_377
-      - IL_378
-      - IL_384
-      - IL_392
-      - IL_396
-      - IL_398
-      - IL_400
-      - IL_406
-      - IL_411
-      - IL_413
-      - IL_414
-      - IL_417
-      - IL_420
-      - IL_429
-      - Relay_🇦🇺AU-🇦🇺AU_548
-      - Relay_🇮🇱IL-🇦🇺AU_60 |10.16Mb
-      - Relay_🇮🇱IL-🇯🇵JP_76 |18.04Mb
-      - TK0123.com-5.22泰国01
-      - TW_598
-      - US_1233
+      - _26
+      - KR_380
+      - YV|@Zyw_Channel
+      - _67
+      - AU_41
+      - YV|@Zyw_Channel 2
+      - US_577
+      - FR_251
+      - Relay_-🇺🇸US_319
+      - YV|tg频道:@Zyw_Channel
+      - _71
+      - YV|www.zyw.asia ZYW免费节点
+      - IR_311
+      - IR_312
       - US_92 |99.56Mb
-      - YD|@Zyw_Channel
-      - YD|@Zyw_Channel 2
-      - YD|@Zyw_Channel 3
-      - YD|@Zyw_Channel 4
-      - YD|tg频道:@Zyw_Channel
-      - YD|tg频道:@Zyw_Channel 2
-      - YD|tg频道:@Zyw_Channel 3
-      - YD|www.zyw.asia ZYW免费节点
-      - YD|www.zyw.asia ZYW免费节点 2
-      - YD|www.zyw.asia ZYW免费节点 3
-      - 白嫖频道@fffffx2-OS3-Rate:1.0
-      - 白嫖频道fffffx2-AU3-Rate:1.0
+      - _71 2
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -325,182 +130,65 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 54.180.118.178:45691
-      - _37
-      - 8DKJ|@Zyw_Channel
-      - 8DKJ|@Zyw_Channel 2
-      - 8DKJ|@Zyw_Channel 3
-      - 8DKJ|tg频道:@Zyw_Channel
-      - 8DKJ|tg频道:@Zyw_Channel 2
-      - 8DKJ|www.zyw.asia ZYW免费节点
-      - AZ-美西
-      - CN_131
-      - CN_136
-      - CN_140
-      - HongKong-HK5-Rate:1.0
-      - IL_317
-      - IL_342
-      - IL_347
-      - IL_349
-      - IL_353
-      - IL_354
-      - IL_358
-      - IL_362
-      - IL_363
-      - IL_377
-      - IL_378
-      - IL_384
-      - IL_392
-      - IL_396
-      - IL_398
-      - IL_400
-      - IL_406
-      - IL_411
-      - IL_413
-      - IL_414
-      - IL_417
-      - IL_420
-      - IL_429
-      - Relay_🇦🇺AU-🇦🇺AU_548
-      - Relay_🇮🇱IL-🇦🇺AU_60 |10.16Mb
-      - Relay_🇮🇱IL-🇯🇵JP_76 |18.04Mb
-      - TK0123.com-5.22泰国01
-      - TW_598
-      - US_1233
+      - _26
+      - KR_380
+      - YV|@Zyw_Channel
+      - _67
+      - AU_41
+      - YV|@Zyw_Channel 2
+      - US_577
+      - FR_251
+      - Relay_-🇺🇸US_319
+      - YV|tg频道:@Zyw_Channel
+      - _71
+      - YV|www.zyw.asia ZYW免费节点
+      - IR_311
+      - IR_312
       - US_92 |99.56Mb
-      - YD|@Zyw_Channel
-      - YD|@Zyw_Channel 2
-      - YD|@Zyw_Channel 3
-      - YD|@Zyw_Channel 4
-      - YD|tg频道:@Zyw_Channel
-      - YD|tg频道:@Zyw_Channel 2
-      - YD|tg频道:@Zyw_Channel 3
-      - YD|www.zyw.asia ZYW免费节点
-      - YD|www.zyw.asia ZYW免费节点 2
-      - YD|www.zyw.asia ZYW免费节点 3
-      - 白嫖频道@fffffx2-OS3-Rate:1.0
-      - 白嫖频道fffffx2-AU3-Rate:1.0
+      - _71 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 54.180.118.178:45691
-      - _37
-      - 8DKJ|@Zyw_Channel
-      - 8DKJ|@Zyw_Channel 2
-      - 8DKJ|@Zyw_Channel 3
-      - 8DKJ|tg频道:@Zyw_Channel
-      - 8DKJ|tg频道:@Zyw_Channel 2
-      - 8DKJ|www.zyw.asia ZYW免费节点
-      - AZ-美西
-      - CN_131
-      - CN_136
-      - CN_140
-      - HongKong-HK5-Rate:1.0
-      - IL_317
-      - IL_342
-      - IL_347
-      - IL_349
-      - IL_353
-      - IL_354
-      - IL_358
-      - IL_362
-      - IL_363
-      - IL_377
-      - IL_378
-      - IL_384
-      - IL_392
-      - IL_396
-      - IL_398
-      - IL_400
-      - IL_406
-      - IL_411
-      - IL_413
-      - IL_414
-      - IL_417
-      - IL_420
-      - IL_429
-      - Relay_🇦🇺AU-🇦🇺AU_548
-      - Relay_🇮🇱IL-🇦🇺AU_60 |10.16Mb
-      - Relay_🇮🇱IL-🇯🇵JP_76 |18.04Mb
-      - TK0123.com-5.22泰国01
-      - TW_598
-      - US_1233
+      - _26
+      - KR_380
+      - YV|@Zyw_Channel
+      - _67
+      - AU_41
+      - YV|@Zyw_Channel 2
+      - US_577
+      - FR_251
+      - Relay_-🇺🇸US_319
+      - YV|tg频道:@Zyw_Channel
+      - _71
+      - YV|www.zyw.asia ZYW免费节点
+      - IR_311
+      - IR_312
       - US_92 |99.56Mb
-      - YD|@Zyw_Channel
-      - YD|@Zyw_Channel 2
-      - YD|@Zyw_Channel 3
-      - YD|@Zyw_Channel 4
-      - YD|tg频道:@Zyw_Channel
-      - YD|tg频道:@Zyw_Channel 2
-      - YD|tg频道:@Zyw_Channel 3
-      - YD|www.zyw.asia ZYW免费节点
-      - YD|www.zyw.asia ZYW免费节点 2
-      - YD|www.zyw.asia ZYW免费节点 3
-      - 白嫖频道@fffffx2-OS3-Rate:1.0
-      - 白嫖频道fffffx2-AU3-Rate:1.0
+      - _71 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 54.180.118.178:45691
-      - _37
-      - 8DKJ|@Zyw_Channel
-      - 8DKJ|@Zyw_Channel 2
-      - 8DKJ|@Zyw_Channel 3
-      - 8DKJ|tg频道:@Zyw_Channel
-      - 8DKJ|tg频道:@Zyw_Channel 2
-      - 8DKJ|www.zyw.asia ZYW免费节点
-      - AZ-美西
-      - CN_131
-      - CN_136
-      - CN_140
-      - HongKong-HK5-Rate:1.0
-      - IL_317
-      - IL_342
-      - IL_347
-      - IL_349
-      - IL_353
-      - IL_354
-      - IL_358
-      - IL_362
-      - IL_363
-      - IL_377
-      - IL_378
-      - IL_384
-      - IL_392
-      - IL_396
-      - IL_398
-      - IL_400
-      - IL_406
-      - IL_411
-      - IL_413
-      - IL_414
-      - IL_417
-      - IL_420
-      - IL_429
-      - Relay_🇦🇺AU-🇦🇺AU_548
-      - Relay_🇮🇱IL-🇦🇺AU_60 |10.16Mb
-      - Relay_🇮🇱IL-🇯🇵JP_76 |18.04Mb
-      - TK0123.com-5.22泰国01
-      - TW_598
-      - US_1233
+      - _26
+      - KR_380
+      - YV|@Zyw_Channel
+      - _67
+      - AU_41
+      - YV|@Zyw_Channel 2
+      - US_577
+      - FR_251
+      - Relay_-🇺🇸US_319
+      - YV|tg频道:@Zyw_Channel
+      - _71
+      - YV|www.zyw.asia ZYW免费节点
+      - IR_311
+      - IR_312
       - US_92 |99.56Mb
-      - YD|@Zyw_Channel
-      - YD|@Zyw_Channel 2
-      - YD|@Zyw_Channel 3
-      - YD|@Zyw_Channel 4
-      - YD|tg频道:@Zyw_Channel
-      - YD|tg频道:@Zyw_Channel 2
-      - YD|tg频道:@Zyw_Channel 3
-      - YD|www.zyw.asia ZYW免费节点
-      - YD|www.zyw.asia ZYW免费节点 2
-      - YD|www.zyw.asia ZYW免费节点 3
-      - 白嫖频道@fffffx2-OS3-Rate:1.0
-      - 白嫖频道fffffx2-AU3-Rate:1.0
+      - _71 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -516,61 +204,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 54.180.118.178:45691
-      - _37
-      - 8DKJ|@Zyw_Channel
-      - 8DKJ|@Zyw_Channel 2
-      - 8DKJ|@Zyw_Channel 3
-      - 8DKJ|tg频道:@Zyw_Channel
-      - 8DKJ|tg频道:@Zyw_Channel 2
-      - 8DKJ|www.zyw.asia ZYW免费节点
-      - AZ-美西
-      - CN_131
-      - CN_136
-      - CN_140
-      - HongKong-HK5-Rate:1.0
-      - IL_317
-      - IL_342
-      - IL_347
-      - IL_349
-      - IL_353
-      - IL_354
-      - IL_358
-      - IL_362
-      - IL_363
-      - IL_377
-      - IL_378
-      - IL_384
-      - IL_392
-      - IL_396
-      - IL_398
-      - IL_400
-      - IL_406
-      - IL_411
-      - IL_413
-      - IL_414
-      - IL_417
-      - IL_420
-      - IL_429
-      - Relay_🇦🇺AU-🇦🇺AU_548
-      - Relay_🇮🇱IL-🇦🇺AU_60 |10.16Mb
-      - Relay_🇮🇱IL-🇯🇵JP_76 |18.04Mb
-      - TK0123.com-5.22泰国01
-      - TW_598
-      - US_1233
+      - _26
+      - KR_380
+      - YV|@Zyw_Channel
+      - _67
+      - AU_41
+      - YV|@Zyw_Channel 2
+      - US_577
+      - FR_251
+      - Relay_-🇺🇸US_319
+      - YV|tg频道:@Zyw_Channel
+      - _71
+      - YV|www.zyw.asia ZYW免费节点
+      - IR_311
+      - IR_312
       - US_92 |99.56Mb
-      - YD|@Zyw_Channel
-      - YD|@Zyw_Channel 2
-      - YD|@Zyw_Channel 3
-      - YD|@Zyw_Channel 4
-      - YD|tg频道:@Zyw_Channel
-      - YD|tg频道:@Zyw_Channel 2
-      - YD|tg频道:@Zyw_Channel 3
-      - YD|www.zyw.asia ZYW免费节点
-      - YD|www.zyw.asia ZYW免费节点 2
-      - YD|www.zyw.asia ZYW免费节点 3
-      - 白嫖频道@fffffx2-OS3-Rate:1.0
-      - 白嫖频道fffffx2-AU3-Rate:1.0
+      - _71 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
