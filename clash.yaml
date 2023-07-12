@@ -5,87 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _26, server: 13.215.206.69, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: SG_173, server: kbawssg1.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, sni: kbawssg1.aiopen.cfd, skip-cert-verify: true, udp: true}
   - {name: KR_380, server: 3.35.230.64, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: YV|@Zyw_Channel, server: zf.heigouyunzf.xyz, port: 38801, type: trojan, password: bc879024-4a54-4cda-874a-3a39f6bc634d, sni: zf.heigouyunzf.xyz, skip-cert-verify: true, udp: true}
-  - {name: _67, server: 3.38.104.242, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: AU_41, server: kr2.jb7ueoq73.xyz, port: 10021, type: trojan, password: 49570603-a6a7-4e16-bcb7-7d534b4fbee7, sni: kr2.jb7ueoq73.xyz, skip-cert-verify: true, udp: true}
-  - {name: YV|@Zyw_Channel 2, server: 3.75.250.36, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
-  - {name: US_577, server: 74.121.191.98, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: FR_251, server: 54.36.115.241, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: Relay_-🇺🇸US_319, server: 36.228.224.160, port: 23330, type: trojan, password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7, skip-cert-verify: true, udp: true}
-  - {name: YV|tg频道:@Zyw_Channel, server: 3.10.227.183, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, udp: true}
-  - {name: _71, server: 185.135.86.173, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: YV|www.zyw.asia ZYW免费节点, server: 172.104.163.77, port: 42661, type: ss, cipher: chacha20-ietf-poly1305, password: !<str> 9869583295, udp: true}
-  - {name: IR_311, server: 185.135.86.173, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: IR_312, server: 185.135.86.173, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: US_92 |99.56Mb, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
-  - {name: _71 2, server: 54.255.237.136, port: 2333, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
+  - {name: SG_174, server: kbawssg2.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, sni: kbawssg2.aiopen.cfd, skip-cert-verify: true, udp: true}
+  - {name: JP_147, server: kbawsjp1.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, sni: kbawsjp1.aiopen.cfd, skip-cert-verify: true, udp: true}
+  - {name: JP_143, server: kbawsjp2.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, sni: kbawsjp2.aiopen.cfd, skip-cert-verify: true, udp: true}
+  - {name: AU_48, server: 43.202.63.143, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _126, server: 104.243.30.252, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
+  - {name: ZZ_453, server: 163.123.192.57, port: 443, type: trojan, password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, skip-cert-verify: true, udp: true}
+  - {name: KR_152, server: 54.180.154.97, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _71, server: 54.255.237.136, port: 2333, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
+  - {name: _09, server: 43.207.74.136, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: SG_163, server: 13.229.98.23, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _26
+      - SG_173
       - KR_380
-      - YV|@Zyw_Channel
-      - _67
-      - AU_41
-      - YV|@Zyw_Channel 2
-      - US_577
-      - FR_251
-      - Relay_-🇺🇸US_319
-      - YV|tg频道:@Zyw_Channel
+      - SG_174
+      - JP_147
+      - JP_143
+      - AU_48
+      - _126
+      - ZZ_453
+      - KR_152
       - _71
-      - YV|www.zyw.asia ZYW免费节点
-      - IR_311
-      - IR_312
-      - US_92 |99.56Mb
-      - _71 2
+      - _09
+      - SG_163
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _26
+      - SG_173
       - KR_380
-      - YV|@Zyw_Channel
-      - _67
-      - AU_41
-      - YV|@Zyw_Channel 2
-      - US_577
-      - FR_251
-      - Relay_-🇺🇸US_319
-      - YV|tg频道:@Zyw_Channel
+      - SG_174
+      - JP_147
+      - JP_143
+      - AU_48
+      - _126
+      - ZZ_453
+      - KR_152
       - _71
-      - YV|www.zyw.asia ZYW免费节点
-      - IR_311
-      - IR_312
-      - US_92 |99.56Mb
-      - _71 2
+      - _09
+      - SG_163
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _26
+      - SG_173
       - KR_380
-      - YV|@Zyw_Channel
-      - _67
-      - AU_41
-      - YV|@Zyw_Channel 2
-      - US_577
-      - FR_251
-      - Relay_-🇺🇸US_319
-      - YV|tg频道:@Zyw_Channel
+      - SG_174
+      - JP_147
+      - JP_143
+      - AU_48
+      - _126
+      - ZZ_453
+      - KR_152
       - _71
-      - YV|www.zyw.asia ZYW免费节点
-      - IR_311
-      - IR_312
-      - US_92 |99.56Mb
-      - _71 2
+      - _09
+      - SG_163
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -104,22 +88,18 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _26
+      - SG_173
       - KR_380
-      - YV|@Zyw_Channel
-      - _67
-      - AU_41
-      - YV|@Zyw_Channel 2
-      - US_577
-      - FR_251
-      - Relay_-🇺🇸US_319
-      - YV|tg频道:@Zyw_Channel
+      - SG_174
+      - JP_147
+      - JP_143
+      - AU_48
+      - _126
+      - ZZ_453
+      - KR_152
       - _71
-      - YV|www.zyw.asia ZYW免费节点
-      - IR_311
-      - IR_312
-      - US_92 |99.56Mb
-      - _71 2
+      - _09
+      - SG_163
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -130,65 +110,53 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _26
+      - SG_173
       - KR_380
-      - YV|@Zyw_Channel
-      - _67
-      - AU_41
-      - YV|@Zyw_Channel 2
-      - US_577
-      - FR_251
-      - Relay_-🇺🇸US_319
-      - YV|tg频道:@Zyw_Channel
+      - SG_174
+      - JP_147
+      - JP_143
+      - AU_48
+      - _126
+      - ZZ_453
+      - KR_152
       - _71
-      - YV|www.zyw.asia ZYW免费节点
-      - IR_311
-      - IR_312
-      - US_92 |99.56Mb
-      - _71 2
+      - _09
+      - SG_163
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _26
+      - SG_173
       - KR_380
-      - YV|@Zyw_Channel
-      - _67
-      - AU_41
-      - YV|@Zyw_Channel 2
-      - US_577
-      - FR_251
-      - Relay_-🇺🇸US_319
-      - YV|tg频道:@Zyw_Channel
+      - SG_174
+      - JP_147
+      - JP_143
+      - AU_48
+      - _126
+      - ZZ_453
+      - KR_152
       - _71
-      - YV|www.zyw.asia ZYW免费节点
-      - IR_311
-      - IR_312
-      - US_92 |99.56Mb
-      - _71 2
+      - _09
+      - SG_163
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _26
+      - SG_173
       - KR_380
-      - YV|@Zyw_Channel
-      - _67
-      - AU_41
-      - YV|@Zyw_Channel 2
-      - US_577
-      - FR_251
-      - Relay_-🇺🇸US_319
-      - YV|tg频道:@Zyw_Channel
+      - SG_174
+      - JP_147
+      - JP_143
+      - AU_48
+      - _126
+      - ZZ_453
+      - KR_152
       - _71
-      - YV|www.zyw.asia ZYW免费节点
-      - IR_311
-      - IR_312
-      - US_92 |99.56Mb
-      - _71 2
+      - _09
+      - SG_163
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -204,22 +172,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _26
+      - SG_173
       - KR_380
-      - YV|@Zyw_Channel
-      - _67
-      - AU_41
-      - YV|@Zyw_Channel 2
-      - US_577
-      - FR_251
-      - Relay_-🇺🇸US_319
-      - YV|tg频道:@Zyw_Channel
+      - SG_174
+      - JP_147
+      - JP_143
+      - AU_48
+      - _126
+      - ZZ_453
+      - KR_152
       - _71
-      - YV|www.zyw.asia ZYW免费节点
-      - IR_311
-      - IR_312
-      - US_92 |99.56Mb
-      - _71 2
+      - _09
+      - SG_163
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
